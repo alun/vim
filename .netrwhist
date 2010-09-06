@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/alun/Рабочий стол/tiscaf-0.3/src/zgs/httpd/let'
+let g:netrw_dirhist_2='/home/alun/workspaces/vbg/mongo-java-driver/build'
+let g:netrw_dirhist_3='/etc/nginx'
+let g:netrw_dirhist_4='/home/alun/php'
