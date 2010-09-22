@@ -4,9 +4,9 @@ fu! <SID>NextConflict()
   exe "e " . matchstr(l:status, "\\%(both modified:\\s*\\zs\\%(\\w\\|/\\|\\.\\)\\+\\ze\n\\)\\|\\%(both added:\\s*\\zs\\%(\\w\\|/\\|\\.\\)\\+\\ze\n\\)")
 endfu
 
-nm ,cc :!git add %<CR><CR>
-nm ,cf /<<<<<<<CR>
-nm ,cs :!git status<CR>
-nm ,ut V/=======<CR>d/>>>>>>><CR>dd:w<CR>
-nm ,um dd/=======<CR>V/>>>>>>><CR>d:w<CR>
-nm ,cn :call <SID>NextConflict()<CR>
+nn ,cc :!git add %<CR><CR>
+nn ,cf /<<<<<<<CR>
+nn ,cs :!git status<CR>
+nn ,ut V/=======<CR>d/>>>>>>><CR>dd:w<CR>
+nn ,um dd/=======<CR>V/>>>>>>><CR>d:w<CR>
+nn ,cn :call <SID>NextConflict()<CR>
